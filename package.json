@@ -1,0 +1,28 @@
+{
+  "name": "myhabeetat-explorer",
+  "version": "1.0.0",
+  "description": "Extract key values, ids and tokens from MyHabeetat's API.",
+  "scripts": {
+    "dev": "now dev",
+    "deploy": "now --target production"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "myhabeetat": "^1.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomasmigone/myhabeetat-explorer.git"
+  },
+  "keywords": [
+    "myhabeetat",
+    "explorer"
+  ],
+  "author": "Tomás Migone <tomasmigone@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tomasmigone/myhabeetat-explorer/issues"
+  },
+  "homepage": "https://github.com/tomasmigone/myhabeetat-explorer#readme"
+}

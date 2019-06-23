@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "name": "myhabeetat-explorer",
+  "alias": [ "myhabeetat" ],
+  "scope": "tmigone",
+  "public": true,
+  "builds": [
+    { "src": "api/*.js", "use": "@now/node" },
+    { "src": "web/package.json", "use": "@now/static-build" }
+  ],
+  "routes": [
+    { "src": "/api", "dest": "api/data.js" },
+    { "src": "/js/(.*)", "dest": "web/js/$1" },
+    { "src": "/css/(.*)", "dest": "web/css/$1" },
+    { "src": "/", "dest": "web/index.html" }
+  ]
+}
